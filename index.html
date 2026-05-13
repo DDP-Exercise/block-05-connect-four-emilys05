@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Connect Four</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOUR FATES - Comedy vs Tragedy</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--TODO: Build the Markup for your Game. Don't forget to style it in a cascading stylesheet. -->
+<div class="theater-background"></div>
 
+
+<header>
+    <h1 class="title">FOUR FATES</h1>
+    <div id="status" class="status-display">Der Vorhang hebt sich...</div>
+</header>
+
+<main class="stage">
+    <div id="mask-left" class="side-mask comedy-mask shaking">🎭</div>
+
+    <div id="board" class="marble-board"></div>
+
+    <div id="mask-right" class="side-mask tragedy-mask">🎭</div>
+</main>
+
+<footer>
+    <button class="btn-reset" onclick="location.reload()">Neue Inszenierung</button>
+</footer>
+
+<script src="js/model.connectfour.js"></script>
+<script src="js/view.polished.js"></script>
+<script src="js/controller.connectfour.js"></script>
 </body>
 </html>
